@@ -1,0 +1,193 @@
+---
+import projects from '../data/projects.json';
+
+const year = new Date().getFullYear();
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Obura Studios</title>
+    <meta
+      name="description"
+      content="Obura Studios — small, focused apps and projects."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>obura<span>.studios</span></h1>
+        <p class="tagline">Small, focused apps and projects.</p>
+      </header>
+
+      <section class="projects" aria-label="Projects">
+        {
+          projects.map((p) => (
+            <article class="card">
+              <div class="card-head">
+                <h2>
+                  {p.url ? (
+                    <a href={p.url} target="_blank" rel="noopener">
+                      {p.name}
+                    </a>
+                  ) : (
+                    p.name
+                  )}
+                </h2>
+                <span class:list={['status', p.status]}>
+                  {p.status === 'live' ? 'live' : 'in progress'}
+                </span>
+              </div>
+              <p>{p.description}</p>
+              <ul class="tags">
+                {p.tags.map((t) => (
+                  <li>{t}</li>
+                ))}
+              </ul>
+            </article>
+          ))
+        }
+      </section>
+
+      <footer>
+        <p>&copy; {year} Obura Studios</p>
+      </footer>
+    </main>
+  </body>
+</html>
+
+<style>
+  :root {
+    --bg: #0e1013;
+    --surface: #16191e;
+    --border: #262b33;
+    --text: #e6e8eb;
+    --muted: #8b929c;
+    --accent: #5eead4;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family:
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  main {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 3rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  header h1 span {
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .tagline {
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+
+  .projects {
+    margin-top: 3.5rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .card-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .card h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .card h2 a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  .card h2 a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  .card > p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+
+  .status {
+    font-size: 0.75rem;
+    white-space: nowrap;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+  }
+
+  .status.live {
+    color: var(--accent);
+    border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  }
+
+  .tags {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .tags li {
+    font-size: 0.75rem;
+    color: var(--muted);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    padding: 0.1rem 0.5rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>

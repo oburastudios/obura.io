@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Örnek Uygulama",
+    "description": "Buraya uygulamanın kısa açıklaması gelecek. Bu girdiyi src/data/projects.json dosyasından düzenleyebilirsin.",
+    "url": "https://example.com",
+    "tags": ["web"],
+    "status": "live"
+  },
+  {
+    "name": "Yakında",
+    "description": "Üzerinde çalışılan bir sonraki proje.",
+    "url": null,
+    "tags": ["mobile"],
+    "status": "in-progress"
+  }
+]
