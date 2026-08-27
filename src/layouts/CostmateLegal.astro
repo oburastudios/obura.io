@@ -1,0 +1,178 @@
+---
+const { title, description } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <nav class="topnav">
+      <a class="brand" href="/">obura<span>.studios</span></a>
+      <a class="nav-cta" href="/costmate/">← CostMate</a>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <p>&copy; {year} Obura</p>
+      <nav aria-label="Legal">
+        <a href="/costmate/privacy/">Privacy Policy</a>
+        <a href="/costmate/terms/">Terms of Service</a>
+        <a href="/costmate/delete-account/">Account Deletion</a>
+      </nav>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --bg: #fbfaf8;
+    --surface: #ffffff;
+    --border: #e8e4dd;
+    --text: #1c1b18;
+    --muted: #6d685f;
+    --accent: #5157e6;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111115;
+      --surface: #1a1a20;
+      --border: #2a2a32;
+      --text: #ecebe8;
+      --muted: #98948c;
+      --accent: #8b93f8;
+    }
+    html {
+      color-scheme: dark;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family:
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      sans-serif;
+    line-height: 1.65;
+  }
+
+  .topnav {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .brand span {
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .nav-cta {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  main {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  main h1 {
+    font-size: 1.75rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+  }
+
+  main h2 {
+    font-size: 1.15rem;
+    margin-top: 2rem;
+  }
+
+  main p,
+  main ul,
+  main ol {
+    margin-top: 0.75rem;
+  }
+
+  main ul,
+  main ol {
+    padding-left: 1.4rem;
+  }
+
+  main li {
+    margin-bottom: 0.4rem;
+  }
+
+  main a {
+    color: var(--accent);
+  }
+
+  .muted {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  footer a {
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  footer a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+</style>

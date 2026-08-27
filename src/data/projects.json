@@ -1,16 +1,9 @@
 [
   {
-    "name": "Örnek Uygulama",
-    "description": "Buraya uygulamanın kısa açıklaması gelecek. Bu girdiyi src/data/projects.json dosyasından düzenleyebilirsin.",
-    "url": "https://example.com",
-    "tags": ["web"],
-    "status": "live"
-  },
-  {
-    "name": "Yakında",
-    "description": "Üzerinde çalışılan bir sonraki proje.",
-    "url": null,
-    "tags": ["mobile"],
+    "name": "CostMate",
+    "description": "Product costing for small manufacturers, workshops, and food producers. Know the true unit cost of every product you make — materials, machines, energy, and overhead included. Coming soon to Google Play and the App Store.",
+    "url": "/costmate/",
+    "tags": ["mobile", "Android", "iOS soon"],
     "status": "in-progress"
   }
 ]
