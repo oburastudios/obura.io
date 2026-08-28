@@ -1,0 +1,43 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6a68ea"/>
+      <stop offset="0.55" stop-color="#5555dc"/>
+      <stop offset="1" stop-color="#3d3bb2"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.25" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+
+  <!-- Zemin -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <rect width="512" height="512" fill="url(#glow)"/>
+
+  <!-- Sağ altta filigran küp (dev, soluk) -->
+  <g transform="translate(268 268) scale(16)" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 22v-8"/>
+    <path d="M2.336 8.89 10 14l11.715-7.029"/>
+    <path d="M22 14a2 2 0 0 1-.971 1.715l-10 6a2 2 0 0 1-2.138-.05l-6-4A2 2 0 0 1 2 16v-6a2 2 0 0 1 .971-1.715l10-6a2 2 0 0 1 2.138.05l6 4A2 2 0 0 1 22 8z"/>
+  </g>
+
+  <!-- Küpün altına yumuşak gölge -->
+  <ellipse cx="256" cy="392" rx="132" ry="30" fill="#22206b" opacity="0.55" filter="url(#blur)"/>
+
+  <!-- Ana küp -->
+  <g transform="translate(122 116) scale(11.2)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 22v-8"/>
+    <path d="M2.336 8.89 10 14l11.715-7.029"/>
+    <path d="M22 14a2 2 0 0 1-.971 1.715l-10 6a2 2 0 0 1-2.138-.05l-6-4A2 2 0 0 1 2 16v-6a2 2 0 0 1 .971-1.715l10-6a2 2 0 0 1 2.138.05l6 4A2 2 0 0 1 22 8z"/>
+  </g>
+
+  <!-- Küpün üst yüzeyine hafif parlaklık -->
+  <g transform="translate(122 116) scale(11.2)">
+    <path d="M2.336 8.89 12 3.2l9.68 5.69L10 14z" fill="#ffffff" opacity="0.10"/>
+  </g>
+</svg>
