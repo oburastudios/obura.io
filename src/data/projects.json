@@ -5,5 +5,26 @@
     "url": "/costmate/",
     "tags": ["mobile", "Android", "iOS soon"],
     "status": "in-progress"
+  },
+  {
+    "name": "Confidary",
+    "description": "A private journal that encrypts what you write on your device and ties every page to the people, places, and topics in it. Coming soon to Google Play and the App Store.",
+    "url": "/confidary/",
+    "tags": ["mobile", "Android", "iOS"],
+    "status": "in-progress"
+  },
+  {
+    "name": "Service Next",
+    "description": "Mobile technical service management running live on Odoo 19 — device tracking, quality control, quotes, invoices, expenses, and calls, from a phone.",
+    "url": "/service-next/",
+    "tags": ["mobile", "Odoo 19", "B2B"],
+    "status": "in-progress"
+  },
+  {
+    "name": "Leave Plan",
+    "description": "A leave and attendance module for Odoo 19 — no approval queue, entries are final the moment they're logged, with dates and summaries computed automatically.",
+    "url": "/leave-plan/",
+    "tags": ["Odoo 19", "B2B"],
+    "status": "in-progress"
   }
 ]

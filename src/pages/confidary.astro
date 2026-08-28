@@ -1,0 +1,1060 @@
+---
+const year = new Date().getFullYear();
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Confidary — A journal that knows who your life is made of</title>
+    <meta
+      name="description"
+      content="Confidary encrypts what you write on your device, links every page to the people, places, and topics in it, and over time shows you who and where your life has been made of."
+    />
+    <meta property="og:title" content="Confidary — A journal that knows who your life is made of" />
+    <meta
+      property="og:description"
+      content="A private journal that ties every page to people, places, and topics — encrypted on your device, for your eyes only."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://obura.io/confidary" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <nav class="topnav">
+      <a class="brand" href="/">Obura <span>Studios</span></a>
+      <a class="nav-cta" href="#plans">Free vs Plus</a>
+    </nav>
+
+    <!-- 1. Hero -->
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="kicker">By Obura Studios</p>
+        <div class="app-title">
+          <span class="app-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M6 3h11a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" /><path d="M6 3v18" /><circle cx="14" cy="12" r="2.3" /><path d="M14 14.3V16" /></svg>
+          </span>
+          <h1>Confidary</h1>
+        </div>
+        <p class="value-prop"><em>For your eyes only.</em></p>
+        <p class="flow-line">Pages · People · Places · Topics</p>
+        <p class="sub">
+          Confidary is a journal that encrypts what you write on your device,
+          ties every page to the people, places, and topics in it, and over
+          time shows you who and where your life has actually been made of.
+        </p>
+        <div class="store-row">
+          <span class="coming-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v6l4 2" /><circle cx="12" cy="12" r="9" /></svg>
+            Coming soon to Google Play &amp; the App Store
+          </span>
+        </div>
+        <p class="langs">Available in English and Turkish.</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="mark-card">
+          <svg viewBox="0 0 200 240">
+            <rect x="34" y="18" width="132" height="204" rx="14" />
+            <line x1="34" y1="18" x2="34" y2="222" />
+            <circle class="dot" cx="150" cy="46" r="2.4" />
+            <circle class="dot" cx="130" cy="34" r="1.6" />
+            <circle class="dot" cx="158" cy="66" r="1.6" />
+            <circle cx="100" cy="128" r="20" />
+            <path d="M100 128v14" />
+            <path d="M90 108v-10a10 10 0 0 1 20 0v10" />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 2. The problem -->
+      <section class="problem" aria-label="The problem">
+        <h2 class="visually-hidden">The problem</h2>
+        <div class="problem-grid">
+          <div class="pain">
+            <h3>Scattered across apps</h3>
+            <p>
+              A thought in Notes, a photo in the camera roll, a memory of who
+              you were with nowhere at all. Nothing connects to anything.
+            </p>
+          </div>
+          <div class="pain">
+            <h3>Context fades first</h3>
+            <p>
+              Six months later you remember you wrote something about someone
+              — just not who, or when, or how you actually felt about them.
+            </p>
+          </div>
+          <div class="pain">
+            <h3>Cloud journals feel exposed</h3>
+            <p>
+              Writing "just between us" notes about real people into an app
+              you don't trust is its own kind of stress.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Features -->
+      <section class="features" id="features">
+        <div class="section-head">
+          <h2>Everything you write, connected to everyone it's about</h2>
+          <p>Real features, no filler. This is what Confidary does.</p>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /></svg>
+            Write freely
+          </h3>
+          <div class="feature-grid">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10" /></svg>
+              <h4>What's on your mind</h4>
+              <p>
+                Title is optional — the real field is what's on your mind.
+                Date, mood, and content live on one screen.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" /><circle cx="9" cy="10" r="2" /><path d="M3 16l5-4 4 3 5-5 4 4" /></svg>
+              <h4>Instagram-style feed</h4>
+              <p>
+                Pages with a photo fill the screen; text-only pages stay
+                compact. Multiple photos scroll in a swipeable carousel.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9h8M8 13h5" /><path d="M21 12c0 4.4-4 8-9 8-1.2 0-2.4-.2-3.4-.6L3 21l1.7-4.3A7.9 7.9 0 0 1 3 12c0-4.4 4-8 9-8s9 3.6 9 8z" /></svg>
+              <h4>Reflections</h4>
+              <p>
+                Follow-up notes you drop on a page days later — they stack
+                underneath like a comment thread, and stay just as encrypted.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" /></svg>
+              <h4>One search box</h4>
+              <p>
+                People, pages, and places from a single query — searched
+                entirely on your device.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3.2" /><path d="M2.5 20a5.5 5.5 0 0 1 11 0" /><circle cx="18" cy="9" r="2.6" /><path d="M14.5 20a4.2 4.2 0 0 1 7.5-2.6" /></svg>
+            People, places &amp; topics
+          </h3>
+          <div class="feature-grid">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" /><path d="M4 20a8 8 0 0 1 16 0" /></svg>
+              <h4>Person card, and what you really think</h4>
+              <p>
+                A private "just between us" field sits front and center — how
+                you actually feel about someone, not the polite version.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-9-9a5.2 5.2 0 0 1 9-4.8A5.2 5.2 0 0 1 21 12c-2 4.5-9 9-9 9z" /></svg>
+              <h4>Import from contacts</h4>
+              <p>
+                Pick someone from your phone's contacts, a draft opens up,
+                edit and save. Birthday, birth time, birth place, gender and
+                MBTI feed age, sun sign, and rising sign (once birth place and
+                time are set) automatically.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 20l-5.5-5.5a2 2 0 0 1 0-2.8L11 4h9v9l-7.5 7.5a2 2 0 0 1-2.8 0z" /><circle cx="15" cy="9" r="1.6" /></svg>
+              <h4>Places &amp; topics, tagged everywhere</h4>
+              <p>
+                Log a place from GPS or an address search, or an icon-tagged
+                topic — then tag either onto pages, people, or each other.
+                Every one gets its own linked pages and photo gallery.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h16" /><path d="M8 15v-4M12 15V7M16 15v-7" /></svg>
+            Your year, summarized
+          </h3>
+          <div class="feature-grid two">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M3 10h18" /></svg>
+              <h4>Mood grid &amp; year in pixels</h4>
+              <p>
+                A weekly emoji grid for the last 30 days, and a pixel view of
+                the last 12 months — this month on top, older months below.
+                Streak counter included.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-4 0-6.5-2.6-6.5-6C5.5 10 12 3 12 3s6.5 7 6.5 12c0 3.4-2.5 6-6.5 6z" /></svg>
+              <h4>Who's on your mind</h4>
+              <p>
+                The five people you mention most, as a relative-intensity bar
+                chart. Tap a row to open that person.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.4 5 5.6.5-4.2 3.7 1.3 5.5L12 15l-5.1 2.7 1.3-5.5L4 8.5l5.6-.5z" /></svg>
+            Compatibility, on your terms
+          </h3>
+          <div class="feature-grid two">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="12" r="6" /><circle cx="15" cy="12" r="6" /></svg>
+              <h4>Sun sign &amp; MBTI compatibility</h4>
+              <p>
+                A 0–100 score between two sun signs, and a separate score
+                across all 16 MBTI types — plus a daily horoscope line above
+                your feed that's deterministic: same sign, same day, same
+                text.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z" /></svg>
+              <h4>No external service involved</h4>
+              <p>
+                Every sign, compatibility, and daily-text calculation runs
+                locally on your device — none of it is sent anywhere.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg>
+            The vault
+          </h3>
+          <div class="feature-grid">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /><circle cx="12" cy="15" r="1.6" /></svg>
+              <h4>4-digit passcode, kept on-device</h4>
+              <p>
+                Your journals are encrypted on your device and stored
+                encrypted on the server. Your passcode is never sent to the
+                server.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z" /><path d="M9 12l2 2 4-4" /></svg>
+              <h4>Random key, passcode-wrapped</h4>
+              <p>
+                Content is encrypted with a random 256-bit key; that key is
+                wrapped by a key derived from your passcode and kept in your
+                device's secure storage.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11V7a4 4 0 0 1 8 0v4" /><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M12 15v3" /></svg>
+              <h4>Optional biometric unlock</h4>
+              <p>
+                Off by default. Uses Android Keystore / iOS Secure Enclave —
+                add a new fingerprint or face and the wrapper invalidates
+                itself, falling back to your passcode.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 8v5l3 2" /></svg>
+              <h4>Photos, encrypted before they leave your phone</h4>
+              <p>
+                Your photos are encrypted on your device before they're
+                uploaded.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9" /><path d="M12 3v9l6 3" /></svg>
+            Offline-first, quietly synced
+          </h3>
+          <div class="feature-grid two">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0" /><circle cx="12" cy="19" r="1" /></svg>
+              <h4>Works fully in airplane mode</h4>
+              <p>
+                Reads always come from the local cache, writes appear
+                instantly and queue up, and unlocking the vault needs no
+                network either. The local cache is encrypted too.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l16 16M7 7C4.5 8.5 3 11 3 14M17 17c2.5-1.5 4-4 4-7 0-4.4-3.6-8-8-8-1.7 0-3.3.6-4.6 1.5" /></svg>
+              <h4>A quiet sync indicator</h4>
+              <p>
+                Shows nothing when everything's fine — only appears for a
+                pending change or when you're offline. Multi-device sync
+                uses last-write-wins, per row.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 3" /></svg>
+            Events &amp; reminders
+          </h3>
+          <div class="feature-grid two">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M3 10h18M8 3v4M16 3v4" /></svg>
+              <h4>Birthdays &amp; anniversaries</h4>
+              <p>
+                Attach one-time, daily, weekly, monthly, or yearly events to a
+                person or a place, with a reminder from right on time up to a
+                day ahead.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" /><path d="M13.7 21a2 2 0 0 1-3.4 0" /></svg>
+              <h4>A daily nudge that gives nothing away</h4>
+              <p>
+                A reminder at a time you choose, asking how your day was. The
+                notification text never mentions anything specific.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. How it works -->
+      <section class="how" id="how-it-works">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>From a first page to a picture of who your life is made of.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>Write a page</h3>
+            <p>
+              Whatever's on your mind, with a mood and, if you want, a photo.
+              It's encrypted on your device before it ever leaves it.
+            </p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>Tag who and where</h3>
+            <p>
+              Link the page to the people you were with, the place you were
+              in, and the topics it touches on.
+            </p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>Watch the picture form</h3>
+            <p>
+              Weeks and months in, the Summary tab shows your moods, your
+              streak, and who's actually been on your mind.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 5. Free vs Plus -->
+      <section class="pricing" id="plans">
+        <div class="section-head">
+          <h2>Free to journal. Plus for deeper patterns.</h2>
+          <p>
+            The full journal — writing, tagging, encryption, offline sync —
+            is free. Plus adds compatibility, daily nudges, and no limits on
+            photos.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col"><span class="visually-hidden">Feature</span></th>
+                <th scope="col">Free</th>
+                <th scope="col" class="pro-col">Plus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Journal, people, places, topics, search</th>
+                <td><span class="check" aria-label="Included">✓</span></td>
+                <td class="pro-col"><span class="check" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Encryption, offline use, sync</th>
+                <td><span class="check" aria-label="Included">✓</span></td>
+                <td class="pro-col"><span class="check" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Mood calendar &amp; summaries</th>
+                <td><span class="check" aria-label="Included">✓</span></td>
+                <td class="pro-col"><span class="check" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Photos per page</th>
+                <td>3</td>
+                <td class="pro-col">Unlimited</td>
+              </tr>
+              <tr>
+                <th scope="row">Compatibility with people (sun sign + MBTI)</th>
+                <td><span class="dash" aria-label="Not included">—</span></td>
+                <td class="pro-col"><span class="check" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Who to write to today</th>
+                <td><span class="dash" aria-label="Not included">—</span></td>
+                <td class="pro-col"><span class="check" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Daily horoscope strip</th>
+                <td><span class="dash" aria-label="Not included">—</span></td>
+                <td class="pro-col"><span class="check" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Promo cards in the feed</th>
+                <td>every 5 pages</td>
+                <td class="pro-col">none</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="pricing-note">
+          Plus will be an auto-renewing subscription via Google Play / App
+          Store. Cancel anytime.
+        </p>
+        <div class="store-row center">
+          <span class="coming-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v6l4 2" /><circle cx="12" cy="12" r="9" /></svg>
+            Coming soon — pricing will be shown in the app
+          </span>
+        </div>
+      </section>
+
+      <!-- 6. FAQ -->
+      <section class="faq" id="faq">
+        <div class="section-head">
+          <h2>Questions, answered</h2>
+        </div>
+        <details>
+          <summary>Is my journal actually private?</summary>
+          <p>
+            Your entries are encrypted on your device and stored encrypted on
+            the server. Your passcode is never sent to the server, and your
+            photos are encrypted on your device before they're uploaded.
+          </p>
+        </details>
+        <details>
+          <summary>Does location search send my location anywhere?</summary>
+          <p>
+            Picking a place from the map or GPS stays on your device. If you
+            type an address or place name to search for it, that text is
+            sent to the map search service to find matching results.
+          </p>
+        </details>
+        <details>
+          <summary>Which languages does Confidary support?</summary>
+          <p>English and Turkish, with the option to follow your device's language.</p>
+        </details>
+        <details>
+          <summary>Can I cancel Plus anytime?</summary>
+          <p>
+            Yes. Plus will be a standard auto-renewing subscription managed
+            through Google Play or the App Store. Cancel there anytime and
+            you keep Plus until the end of the paid period.
+          </p>
+        </details>
+        <details>
+          <summary>Does Confidary work without an internet connection?</summary>
+          <p>
+            Yes. Reading always comes from an encrypted local copy, and new
+            pages save instantly and sync once you're back online — including
+            photos.
+          </p>
+        </details>
+      </section>
+
+      <!-- Closing CTA -->
+      <section class="closing">
+        <h2>Start writing. See who and where it's made of, later.</h2>
+        <div class="store-row center">
+          <span class="coming-badge big">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v6l4 2" /><circle cx="12" cy="12" r="9" /></svg>
+            Confidary is coming soon to Google Play &amp; the App Store
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <!-- 7. Footer -->
+    <footer>
+      <p>&copy; {year} Obura</p>
+    </footer>
+  </body>
+</html>
+
+<style>
+  :root {
+    --bg: #faf8fb;
+    --surface: #ffffff;
+    --border: #e7e0ed;
+    --text: #201c26;
+    --muted: #6f6678;
+    --accent: #7c3aed;
+    --accent-strong: #6d28d9;
+    --accent-soft: #f1ebfd;
+    --shadow: 0 1px 2px rgba(32, 28, 38, 0.05), 0 8px 24px rgba(32, 28, 38, 0.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121016;
+      --surface: #1c1922;
+      --border: #2c2733;
+      --text: #ece9f0;
+      --muted: #a49aad;
+      --accent: #b389f0;
+      --accent-strong: #c9a9f5;
+      --accent-soft: #2c2140;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+    html {
+      color-scheme: dark;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family:
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      sans-serif;
+    line-height: 1.6;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* Top nav */
+  .topnav {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .brand span {
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .nav-cta {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  /* Hero */
+  .hero {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (min-width: 820px) {
+    .hero {
+      grid-template-columns: 1.15fr 0.85fr;
+      padding-top: 4.5rem;
+    }
+  }
+
+  .kicker {
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .app-title {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .app-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(3rem, 7vw, 4rem);
+    height: clamp(3rem, 7vw, 4rem);
+    border-radius: 26%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    box-shadow: var(--shadow);
+    flex-shrink: 0;
+  }
+
+  .app-mark svg {
+    width: 55%;
+    height: 55%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .flow-line {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 0.75rem;
+  }
+
+  .value-prop {
+    font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+    font-weight: 650;
+    line-height: 1.3;
+    margin-top: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .value-prop em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .sub {
+    color: var(--muted);
+    margin-top: 1rem;
+    max-width: 34rem;
+  }
+
+  .store-row {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .store-row.center {
+    justify-content: center;
+  }
+
+  .coming-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    border-radius: 999px;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .coming-badge svg {
+    width: 1.1em;
+    height: 1.1em;
+    flex-shrink: 0;
+  }
+
+  .coming-badge.big {
+    font-size: 1rem;
+    padding: 0.7rem 1.4rem;
+  }
+
+  .langs {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 1rem;
+  }
+
+  /* Hero mark illustration */
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mark-card {
+    width: min(15rem, 70vw);
+    border: 1px solid var(--border);
+    border-radius: 1.5rem;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    color: var(--accent);
+  }
+
+  .mark-card svg {
+    width: 100%;
+    height: auto;
+    stroke-width: 1.4;
+  }
+
+  .mark-card .dot {
+    fill: var(--accent);
+    stroke: none;
+  }
+
+  /* Sections */
+  main {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  section {
+    padding: 3.5rem 0;
+  }
+
+  .section-head {
+    max-width: 40rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .section-head h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+
+  .section-head p {
+    color: var(--muted);
+    margin-top: 0.6rem;
+  }
+
+  /* Problem strip */
+  .problem {
+    border-top: 1px solid var(--border);
+  }
+
+  .problem-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (min-width: 720px) {
+    .problem-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .pain {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.4rem 1.5rem;
+    box-shadow: var(--shadow);
+  }
+
+  .pain h3 {
+    font-size: 1.05rem;
+  }
+
+  .pain p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Features */
+  .feature-group {
+    margin-top: 2.5rem;
+  }
+
+  .group-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.1rem;
+  }
+
+  .group-title svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .feature-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (min-width: 720px) {
+    .feature-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 980px) {
+    .feature-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .feature-grid.two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .feature {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.4rem 1.5rem;
+    box-shadow: var(--shadow);
+  }
+
+  .feature > svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+  }
+
+  .feature h4 {
+    font-size: 1rem;
+  }
+
+  .feature p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: 0.45rem;
+  }
+
+  /* How it works */
+  .how {
+    border-top: 1px solid var(--border);
+  }
+
+  .steps {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    counter-reset: step;
+  }
+
+  @media (min-width: 720px) {
+    .steps {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .steps li {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.4rem 1.5rem;
+    box-shadow: var(--shadow);
+  }
+
+  .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+
+  .steps h3 {
+    font-size: 1.02rem;
+  }
+
+  .steps p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: 0.45rem;
+  }
+
+  /* Pricing */
+  .pricing {
+    border-top: 1px solid var(--border);
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 34rem;
+    font-size: 0.92rem;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 0.9rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  tbody tr:last-child th,
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  thead th {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+  }
+
+  tbody th {
+    font-weight: 500;
+    color: var(--text);
+    max-width: 24rem;
+  }
+
+  td {
+    color: var(--muted);
+  }
+
+  .pro-col {
+    background: color-mix(in srgb, var(--accent) 6%, transparent);
+  }
+
+  thead .pro-col {
+    color: var(--accent);
+  }
+
+  .check {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .dash {
+    color: var(--muted);
+  }
+
+  .pricing-note {
+    color: var(--muted);
+    font-size: 0.88rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .pricing .store-row {
+    margin-top: 1.25rem;
+  }
+
+  /* FAQ */
+  .faq {
+    border-top: 1px solid var(--border);
+    max-width: 46rem;
+  }
+
+  details {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.9rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.98rem;
+  }
+
+  details p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: 0.6rem;
+  }
+
+  /* Closing */
+  .closing {
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding-bottom: 4.5rem;
+  }
+
+  .closing h2 {
+    font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+    letter-spacing: -0.02em;
+    max-width: 32rem;
+    margin: 0 auto 1.5rem;
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border);
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>

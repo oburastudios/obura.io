@@ -1,0 +1,889 @@
+---
+const year = new Date().getFullYear();
+const demoHref =
+  'mailto:comporell@gmail.com?subject=Service%20Next%20demo%20request';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Service Next — Technical service management for Odoo 19</title>
+    <meta
+      name="description"
+      content="Service Next is a mobile technical service app wired live into your Odoo 19 backend: device tracking, quality control, quotes, invoices, expenses, and calls, from a phone."
+    />
+    <meta property="og:title" content="Service Next — Technical service management for Odoo 19" />
+    <meta
+      property="og:description"
+      content="A mobile service-shop app running live on your Odoo 19 data — device status, QC, quotes to cash, and calls, from a phone."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://obura.io/service-next" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <nav class="topnav">
+      <a class="brand" href="/">Obura <span>Studios</span></a>
+      <a class="nav-cta" href={demoHref}>Request a demo</a>
+    </nav>
+
+    <!-- 1. Hero -->
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="kicker">By Obura Studios · Built for Odoo 19</p>
+        <div class="app-title">
+          <span class="app-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="6" width="14" height="14" rx="2" /><path d="M9 6V4.5A1.5 1.5 0 0 1 10.5 3h3A1.5 1.5 0 0 1 15 4.5V6" /><path d="M17 10l4-2v9l-4-2" /></svg>
+          </span>
+          <h1>Service Next</h1>
+        </div>
+        <p class="value-prop">
+          Run the whole repair shop <em>from a phone.</em>
+        </p>
+        <p class="flow-line">Device intake · Quality control · Quotes to cash · Calls</p>
+        <p class="sub">
+          Service Next is a mobile technical-service app wired live into your
+          Odoo 19 data. Every device, quote, invoice, expense, and call your
+          team touches on the shop floor is the same record your office sees
+          in Odoo — no re-entry, no separate system.
+        </p>
+        <div class="store-row">
+          <a class="btn-primary" href={demoHref}>Request a demo</a>
+          <span class="cta-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M3 9h18M9 3v6" /></svg>
+            iOS &amp; Android · Odoo 19
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="mark-card">
+          <svg viewBox="0 0 200 240">
+            <rect x="30" y="20" width="140" height="200" rx="16" />
+            <circle cx="100" cy="60" r="18" />
+            <path d="M93 60l5 5 10-10" />
+            <line x1="52" y1="100" x2="148" y2="100" />
+            <line x1="52" y1="120" x2="148" y2="120" />
+            <line x1="52" y1="140" x2="120" y2="140" />
+            <rect x="52" y="164" width="96" height="30" rx="6" />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 2. The problem -->
+      <section class="problem" aria-label="The problem">
+        <h2 class="visually-hidden">The problem</h2>
+        <div class="problem-grid">
+          <div class="pain">
+            <h3>Paper tickets, whiteboard status</h3>
+            <p>
+              A device's real status lives in someone's head or a sticky
+              note, not in the system the office is looking at.
+            </p>
+          </div>
+          <div class="pain">
+            <h3>Quotes stuck in WhatsApp</h3>
+            <p>
+              A price gets texted, agreed to verbally, and never turns into a
+              proper order, invoice, or paid receipt.
+            </p>
+          </div>
+          <div class="pain">
+            <h3>Nothing works when the signal drops</h3>
+            <p>
+              A basement workshop or a site visit shouldn't mean the app
+              stops working until you're back online.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Features -->
+      <section class="features" id="features">
+        <div class="section-head">
+          <h2>Everything the shop floor and the office both need</h2>
+          <p>Real features, no filler. This is what Service Next does.</p>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M8 2v4M16 2v4M4 10h16" /></svg>
+            Service records &amp; device tracking
+          </h3>
+          <div class="feature-grid">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8 12l3 3 5-6" /></svg>
+              <h4>Per-device status flow</h4>
+              <p>
+                Waiting → Inspection → Awaiting approval → In service →
+                Quality control → Ready → Delivered. Always visible, always
+                current.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /></svg>
+              <h4>Inspection items &amp; rich notes</h4>
+              <p>
+                Inspection line items with HTML-formatted descriptions, plus
+                accessory tracking for what came in with the device.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" /><circle cx="9" cy="10" r="2" /><path d="M3 16l5-4 4 3 5-5 4 4" /></svg>
+              <h4>Photos, by stage</h4>
+              <p>
+                Separate photo sets for customer, inspection, and service
+                stages, a cover photo per device, and one-tap sharing.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M8 8h.01M8 12h.01M8 16h.01M12 8h4M12 12h4M12 16h4" /></svg>
+              <h4>QR device tags</h4>
+              <p>
+                Scan a device's tag to jump straight to its record — or open
+                a new service record and device card from scratch.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z" /><path d="M9 12l2 2 4-4" /></svg>
+            Quality control
+          </h3>
+          <div class="feature-grid two">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10" /></svg>
+              <h4>Technician-approved checklists</h4>
+              <p>
+                A device only reaches "Ready" once it clears a checklist
+                approved by a technician — before it ever goes back out.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3.2" /><circle cx="16" cy="8" r="3.2" /><path d="M2.5 20a5.5 5.5 0 0 1 11 0M10.5 20a5.5 5.5 0 0 1 11 0" /></svg>
+              <h4>Configurable approval threshold</h4>
+              <p>
+                How many technicians need to sign off is set by management —
+                per shop, not hardcoded.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-4 0-6.5-2.6-6.5-6C5.5 10 12 3 12 3s6.5 7 6.5 12c0 3.4-2.5 6-6.5 6z" /></svg>
+            Quotes to cash
+          </h3>
+          <div class="feature-grid">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10" /></svg>
+              <h4>Quotes that build fast</h4>
+              <p>
+                Products from the catalog, section headers, notes, and fixed
+                or percentage discount lines — created and edited on the
+                spot.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 3" /></svg>
+              <h4>One tap to order</h4>
+              <p>
+                Share a PDF or a customer-portal link, email the quote
+                directly, or confirm it into an order with a single tap.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 10h18" /></svg>
+              <h4>Invoices &amp; payments</h4>
+              <p>
+                Regular invoices generate straight from a confirmed order.
+                Take partial or discounted payments, or share a payment link.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3.2" /><path d="M2.5 20a5.5 5.5 0 0 1 11 0" /><circle cx="18" cy="9" r="2.6" /><path d="M14.5 20a4.2 4.2 0 0 1 7.5-2.6" /></svg>
+            The office, wherever you are
+          </h3>
+          <div class="feature-grid">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18" /></svg>
+              <h4>Expenses, scanned in</h4>
+              <p>
+                Log a receipt with description, amount, date, and category —
+                photographed or auto-cropped and perspective-corrected from a
+                scan. Draft → Submitted → Approved → Paid, tracked end to
+                end.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" /><path d="M4 20a8 8 0 0 1 16 0" /></svg>
+              <h4>Customer cards, synced to contacts</h4>
+              <p>
+                Auto-sync with your phone contacts, look a customer up by
+                number (e.g. "1000" finds M1000), and jump straight to their
+                quotes and invoices.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l4.5 1.2 1.5 3.6-2.3 2A13 13 0 0 0 14 17.3l2-2.3 3.6 1.5L21 21c-4 1.5-16-4-17-17z" /></svg>
+              <h4>Calls, matched to the customer</h4>
+              <p>
+                Call history through NetGSM Santral, incoming-call
+                notifications matched to the right contact, and calling
+                straight from a customer's card.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M8 9h8M8 13h5" /></svg>
+            Dashboard, activities &amp; reminders
+          </h3>
+          <div class="feature-grid">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M7 15v-3M12 15V9M17 15v-5" /></svg>
+              <h4>A live shop-floor snapshot</h4>
+              <p>
+                Open records, drafts, pending approvals, ready devices,
+                unpaid invoices, and activity counts — plus this month's
+                quote win rate and stock movement, at a glance.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 3" /></svg>
+              <h4>"My status" &amp; to-dos</h4>
+              <p>
+                What's assigned to you and its last update, plus pending
+                activities, to-dos with priority and due dates, and an in-app
+                notification inbox.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" /><path d="M13.7 21a2 2 0 0 1-3.4 0" /></svg>
+              <h4>WhatsApp &amp; sharing, one tap</h4>
+              <p>
+                Draft and preview a WhatsApp message, share quote or service
+                links, or send email and customer-portal links straight from
+                a record.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg>
+            Security &amp; access
+          </h3>
+          <div class="feature-grid">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /><circle cx="12" cy="15" r="1.6" /></svg>
+              <h4>Encrypted login, server-checked</h4>
+              <p>
+                Fingerprint sign-in on supported devices, with permissions
+                enforced server-side, not just hidden in the app.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V7a4 4 0 0 1 8 0v4" /><path d="M12 15v3" /></svg>
+              <h4>PIN app lock</h4>
+              <p>
+                Locks on return from background, rejects weak PINs like 1234
+                or 1111, signs out after 3 failed attempts, and requires a
+                PIN when fingerprint isn't available.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3.2" /><path d="M2.5 20a5.5 5.5 0 0 1 11 0" /><circle cx="18" cy="9" r="2.6" /><path d="M14.5 20a4.2 4.2 0 0 1 7.5-2.6" /></svg>
+              <h4>Module-level permissions</h4>
+              <p>
+                Access to quotes, contacts, service, invoices, and expenses
+                is switched on per user — including separate list-level and
+                detail-level access.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. How it works -->
+      <section class="how" id="how-it-works">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>From intake to a paid invoice, on the same record.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>A device comes in</h3>
+            <p>
+              Scan its QR tag or open a new record. Status, photos, and
+              accessories are tracked from the first step.
+            </p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>The team works, even offline</h3>
+            <p>
+              Inspection, quality control, and quotes happen on the shop
+              floor — the app keeps working and catches up once you're back
+              online.
+            </p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>Money flows back to Odoo</h3>
+            <p>
+              A quote becomes an order, an order becomes an invoice, a
+              payment gets recorded — all visible in Odoo the moment it
+              happens.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 5. Platform -->
+      <section class="platform" id="platform">
+        <div class="section-head">
+          <h2>Built on your Odoo 19</h2>
+          <p>Not a separate system to keep in sync — the same data, on a phone.</p>
+        </div>
+        <div class="feature-grid three-plain">
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8 12l3 3 5-6" /></svg>
+            <h4>Live on Odoo 19 data</h4>
+            <p>No import, no export — the same records your office already works in.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0" /><circle cx="12" cy="19" r="1" /></svg>
+            <h4>Offline-resilient</h4>
+            <p>Loses connection on a job site, picks back up where it left off.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M8 8h.01M8 12h.01M8 16h.01M12 8h4M12 12h4M12 16h4" /></svg>
+            <h4>Encrypted QR install</h4>
+            <p>
+              Installs by connecting the app to the right server through an
+              encrypted QR code — or try it first in a safe demo environment,
+              no setup needed.
+            </p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M4 10h16M9 4v16" /></svg>
+            <h4>iOS &amp; Android, phone &amp; tablet</h4>
+            <p>
+              A native Ionic + Capacitor app with a responsive layout, a
+              Turkish interface, and dark or light theme by device.
+            </p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M8 8h.01M8 12h.01M8 16h.01M12 8h4M12 12h4M12 16h4" /></svg>
+            <h4>Scanning built in</h4>
+            <p>
+              QR and barcode scanning for products and device tags, plus
+              document scanning with automatic crop and perspective
+              correction.
+            </p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="12" r="6" /><circle cx="15" cy="12" r="6" /></svg>
+            <h4>One company or many</h4>
+            <p>Deploys for a single business or a multi-company setup.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Closing CTA -->
+      <section class="closing">
+        <h2>See your own service data running in it.</h2>
+        <div class="store-row center">
+          <a class="btn-primary big" href={demoHref}>Request a demo</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- 6. Footer -->
+    <footer>
+      <p>&copy; {year} Obura</p>
+    </footer>
+  </body>
+</html>
+
+<style>
+  :root {
+    --bg: #f7f9fc;
+    --surface: #ffffff;
+    --border: #dfe5ee;
+    --text: #171b21;
+    --muted: #5c6572;
+    --accent: #2f6fed;
+    --accent-strong: #2557c7;
+    --accent-soft: #e9f0fe;
+    --shadow: 0 1px 2px rgba(17, 24, 39, 0.05), 0 8px 24px rgba(17, 24, 39, 0.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1216;
+      --surface: #171b21;
+      --border: #262c35;
+      --text: #e7ebf1;
+      --muted: #98a1ad;
+      --accent: #7ea6f7;
+      --accent-strong: #9cbcf9;
+      --accent-soft: #1c2740;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+    html {
+      color-scheme: dark;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family:
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      sans-serif;
+    line-height: 1.6;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .topnav {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .brand span {
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .nav-cta {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .hero {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (min-width: 820px) {
+    .hero {
+      grid-template-columns: 1.15fr 0.85fr;
+      padding-top: 4.5rem;
+    }
+  }
+
+  .kicker {
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .app-title {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .app-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(3rem, 7vw, 4rem);
+    height: clamp(3rem, 7vw, 4rem);
+    border-radius: 26%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    box-shadow: var(--shadow);
+    flex-shrink: 0;
+  }
+
+  .app-mark svg {
+    width: 55%;
+    height: 55%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .flow-line {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 0.75rem;
+  }
+
+  .value-prop {
+    font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+    font-weight: 650;
+    line-height: 1.3;
+    margin-top: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .value-prop em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .sub {
+    color: var(--muted);
+    margin-top: 1rem;
+    max-width: 34rem;
+  }
+
+  .store-row {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.9rem;
+  }
+
+  .store-row.center {
+    justify-content: center;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+  }
+
+  .btn-primary:hover {
+    background: var(--accent-strong);
+  }
+
+  .btn-primary.big {
+    font-size: 1rem;
+    padding: 0.85rem 1.7rem;
+  }
+
+  .cta-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--muted);
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+
+  .cta-badge svg {
+    width: 1.1em;
+    height: 1.1em;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mark-card {
+    width: min(15rem, 70vw);
+    border: 1px solid var(--border);
+    border-radius: 1.5rem;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    color: var(--accent);
+  }
+
+  .mark-card svg {
+    width: 100%;
+    height: auto;
+    stroke-width: 1.4;
+  }
+
+  main {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  section {
+    padding: 3.5rem 0;
+  }
+
+  .section-head {
+    max-width: 40rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .section-head h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+
+  .section-head p {
+    color: var(--muted);
+    margin-top: 0.6rem;
+  }
+
+  .problem {
+    border-top: 1px solid var(--border);
+  }
+
+  .problem-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (min-width: 720px) {
+    .problem-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .pain {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.4rem 1.5rem;
+    box-shadow: var(--shadow);
+  }
+
+  .pain h3 {
+    font-size: 1.05rem;
+  }
+
+  .pain p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: 0.5rem;
+  }
+
+  .feature-group {
+    margin-top: 2.5rem;
+  }
+
+  .group-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.1rem;
+  }
+
+  .group-title svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .feature-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (min-width: 720px) {
+    .feature-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 980px) {
+    .feature-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .feature-grid.two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .feature {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.4rem 1.5rem;
+    box-shadow: var(--shadow);
+  }
+
+  .feature > svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+  }
+
+  .feature h4 {
+    font-size: 1rem;
+  }
+
+  .feature p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: 0.45rem;
+  }
+
+  .how {
+    border-top: 1px solid var(--border);
+  }
+
+  .steps {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    counter-reset: step;
+  }
+
+  @media (min-width: 720px) {
+    .steps {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .steps li {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.4rem 1.5rem;
+    box-shadow: var(--shadow);
+  }
+
+  .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+
+  .steps h3 {
+    font-size: 1.02rem;
+  }
+
+  .steps p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: 0.45rem;
+  }
+
+  .platform {
+    border-top: 1px solid var(--border);
+  }
+
+  .feature-grid.three-plain {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 720px) {
+    .feature-grid.three-plain {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 980px) {
+    .feature-grid.three-plain {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .closing {
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding-bottom: 4.5rem;
+  }
+
+  .closing h2 {
+    font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+    letter-spacing: -0.02em;
+    max-width: 32rem;
+    margin: 0 auto 1.5rem;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>

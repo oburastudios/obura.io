@@ -1,0 +1,726 @@
+---
+const year = new Date().getFullYear();
+const demoHref =
+  'mailto:comporell@gmail.com?subject=Leave%20Plan%20demo%20request';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leave Plan — Leave & attendance for Odoo 19</title>
+    <meta
+      name="description"
+      content="Leave Plan is a leave and attendance module for Odoo 19: entries are final the moment they're logged, dates compute themselves, and one calendar shows the whole team."
+    />
+    <meta property="og:title" content="Leave Plan — Leave & attendance for Odoo 19" />
+    <meta
+      property="og:description"
+      content="No approval queue — leave, absence, and lateness are settled the moment they're entered, with dates and summaries computed automatically."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://obura.io/leave-plan" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <nav class="topnav">
+      <a class="brand" href="/">Obura <span>Studios</span></a>
+      <a class="nav-cta" href={demoHref}>Request a demo</a>
+    </nav>
+
+    <!-- 1. Hero -->
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="kicker">By Obura Studios · Built for Odoo 19</p>
+        <div class="app-title">
+          <span class="app-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M3 10h18M8 3v4M16 3v4" /><path d="M8.5 15l2 2 5-5" /></svg>
+          </span>
+          <h1>Leave Plan</h1>
+        </div>
+        <p class="value-prop">
+          Leave decisions, <em>settled the moment they're entered.</em>
+        </p>
+        <p class="flow-line">Leave · Absence · Lateness — one calendar</p>
+        <p class="sub">
+          Leave Plan is a leave and attendance module for Odoo 19. There's no
+          approval queue: a leave, absence, or lateness entry is final the
+          instant it's logged, and the dates, calendar, and summaries work
+          themselves out from there.
+        </p>
+        <div class="store-row">
+          <a class="btn-primary" href={demoHref}>Request a demo</a>
+          <span class="cta-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M3 9h18M9 3v6" /></svg>
+            Odoo 19 module
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="mark-card">
+          <svg viewBox="0 0 200 240">
+            <rect x="30" y="30" width="140" height="180" rx="14" />
+            <line x1="30" y1="70" x2="170" y2="70" />
+            <line x1="60" y1="20" x2="60" y2="42" />
+            <line x1="140" y1="20" x2="140" y2="42" />
+            <rect class="fill" x="52" y="94" width="26" height="20" rx="4" />
+            <rect x="92" y="94" width="26" height="20" rx="4" />
+            <rect x="132" y="94" width="26" height="20" rx="4" />
+            <rect x="52" y="128" width="26" height="20" rx="4" />
+            <rect class="fill" x="92" y="128" width="26" height="20" rx="4" />
+            <rect x="132" y="128" width="26" height="20" rx="4" />
+            <rect x="52" y="162" width="26" height="20" rx="4" />
+            <rect x="92" y="162" width="26" height="20" rx="4" />
+            <rect class="fill" x="132" y="162" width="26" height="20" rx="4" />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 2. The problem -->
+      <section class="problem" aria-label="The problem">
+        <h2 class="visually-hidden">The problem</h2>
+        <div class="problem-grid">
+          <div class="pain">
+            <h3>Leave stuck in a queue</h3>
+            <p>
+              A request sits waiting for a signature while the calendar
+              nobody trusts stays out of date.
+            </p>
+          </div>
+          <div class="pain">
+            <h3>Manual date math</h3>
+            <p>
+              Counting workdays by hand, forgetting Sundays, arguing over
+              whether a holiday should count against someone's leave.
+            </p>
+          </div>
+          <div class="pain">
+            <h3>No shared picture</h3>
+            <p>
+              Who's out, who's late how often, who's used what type of leave
+              — scattered across spreadsheets no one keeps current.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Features -->
+      <section class="features" id="features">
+        <div class="section-head">
+          <h2>Leave that resolves itself</h2>
+          <p>Real features, no filler. This is what Leave Plan does.</p>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8 12l3 3 5-6" /></svg>
+            Instant, no approval queue
+          </h3>
+          <div class="feature-grid two">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10" /></svg>
+              <h4>Final the moment it's entered</h4>
+              <p>
+                A leave, absence, or lateness record is settled as soon as
+                it's logged — no pending state, no waiting on a signature.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 10h18" /></svg>
+              <h4>Dates that compute themselves</h4>
+              <p>
+                Pick a start date and a day count, and the end date works
+                itself out — Sundays are never counted against leave days.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z" /></svg>
+            Holidays, your rules
+          </h3>
+          <div class="feature-grid two">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10" /></svg>
+              <h4>Configurable holiday deduction</h4>
+              <p>
+                An administrator sets whether public holidays count against
+                leave. By default they don't — except New Year's, Kurban
+                Bayram, and Ramadan Bayram.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 10h18M8 3v4M16 3v4" /></svg>
+              <h4>One calendar, color-coded</h4>
+              <p>
+                Leave, public holidays, and absences all sit on the same
+                calendar, colored by type.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /></svg>
+            Absence, sick leave &amp; overtime tracking
+          </h3>
+          <div class="feature-grid">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M9 12l2 2 4-4" /></svg>
+              <h4>Convert with one tap</h4>
+              <p>
+                An absence record becomes a sick leave record in a single
+                "Convert to leave" action.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /></svg>
+              <h4>Sick reports as attachments</h4>
+              <p>
+                A medical report attaches straight to its leave record as a
+                document.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 3" /></svg>
+              <h4>Lateness, down to the minute</h4>
+              <p>
+                Late arrivals and early departures are logged in minutes,
+                with a monthly pivot summary report.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="feature-group">
+          <h3 class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3.2" /><path d="M2.5 20a5.5 5.5 0 0 1 11 0" /><circle cx="18" cy="9" r="2.6" /><path d="M14.5 20a4.2 4.2 0 0 1 7.5-2.6" /></svg>
+            Summaries &amp; access
+          </h3>
+          <div class="feature-grid two">
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M7 15v-3M12 15V9M17 15v-5" /></svg>
+              <h4>Grouped by leave type</h4>
+              <p>
+                Who used how much of which leave type, all on one screen.
+              </p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg>
+              <h4>Scoped by role</h4>
+              <p>
+                Employees see only their own records. Managers see the whole
+                team and its allocations.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. How it works -->
+      <section class="how" id="how-it-works">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>From one entry to a team-wide picture, instantly.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>Log the entry</h3>
+            <p>
+              Leave, absence, or lateness — enter it once, with a start date
+              and how many days or minutes.
+            </p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>It's already final</h3>
+            <p>
+              No approval step. End dates, working-day counts, and holiday
+              rules are worked out automatically.
+            </p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>It's on the calendar</h3>
+            <p>
+              Visible immediately on the shared calendar and rolled into that
+              employee's type-by-type summary.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Closing CTA -->
+      <section class="closing">
+        <h2>See your own team's calendar running in it.</h2>
+        <div class="store-row center">
+          <a class="btn-primary big" href={demoHref}>Request a demo</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- 5. Footer -->
+    <footer>
+      <p>&copy; {year} Obura</p>
+    </footer>
+  </body>
+</html>
+
+<style>
+  :root {
+    --bg: #f6faf8;
+    --surface: #ffffff;
+    --border: #dcebe3;
+    --text: #17211c;
+    --muted: #5b6b62;
+    --accent: #059669;
+    --accent-strong: #047a56;
+    --accent-soft: #e4f5ee;
+    --shadow: 0 1px 2px rgba(15, 30, 24, 0.05), 0 8px 24px rgba(15, 30, 24, 0.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1512;
+      --surface: #17201b;
+      --border: #26332c;
+      --text: #e6ede9;
+      --muted: #96a59d;
+      --accent: #4ade9b;
+      --accent-strong: #74e6b3;
+      --accent-soft: #1a2e25;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+    html {
+      color-scheme: dark;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family:
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      sans-serif;
+    line-height: 1.6;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .topnav {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .brand span {
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .nav-cta {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .hero {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (min-width: 820px) {
+    .hero {
+      grid-template-columns: 1.15fr 0.85fr;
+      padding-top: 4.5rem;
+    }
+  }
+
+  .kicker {
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .app-title {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .app-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(3rem, 7vw, 4rem);
+    height: clamp(3rem, 7vw, 4rem);
+    border-radius: 26%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    box-shadow: var(--shadow);
+    flex-shrink: 0;
+  }
+
+  .app-mark svg {
+    width: 55%;
+    height: 55%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .flow-line {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 0.75rem;
+  }
+
+  .value-prop {
+    font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+    font-weight: 650;
+    line-height: 1.3;
+    margin-top: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .value-prop em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .sub {
+    color: var(--muted);
+    margin-top: 1rem;
+    max-width: 34rem;
+  }
+
+  .store-row {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.9rem;
+  }
+
+  .store-row.center {
+    justify-content: center;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+  }
+
+  .btn-primary:hover {
+    background: var(--accent-strong);
+  }
+
+  .btn-primary.big {
+    font-size: 1rem;
+    padding: 0.85rem 1.7rem;
+  }
+
+  .cta-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--muted);
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+
+  .cta-badge svg {
+    width: 1.1em;
+    height: 1.1em;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mark-card {
+    width: min(15rem, 70vw);
+    border: 1px solid var(--border);
+    border-radius: 1.5rem;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    color: var(--accent);
+  }
+
+  .mark-card svg {
+    width: 100%;
+    height: auto;
+    stroke-width: 1.4;
+  }
+
+  .mark-card svg .fill {
+    fill: var(--accent);
+    fill-opacity: 0.18;
+  }
+
+  main {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  section {
+    padding: 3.5rem 0;
+  }
+
+  .section-head {
+    max-width: 40rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .section-head h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+
+  .section-head p {
+    color: var(--muted);
+    margin-top: 0.6rem;
+  }
+
+  .problem {
+    border-top: 1px solid var(--border);
+  }
+
+  .problem-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (min-width: 720px) {
+    .problem-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .pain {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.4rem 1.5rem;
+    box-shadow: var(--shadow);
+  }
+
+  .pain h3 {
+    font-size: 1.05rem;
+  }
+
+  .pain p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: 0.5rem;
+  }
+
+  .feature-group {
+    margin-top: 2.5rem;
+  }
+
+  .group-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.1rem;
+  }
+
+  .group-title svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .feature-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (min-width: 720px) {
+    .feature-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 980px) {
+    .feature-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .feature-grid.two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .feature {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.4rem 1.5rem;
+    box-shadow: var(--shadow);
+  }
+
+  .feature > svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+  }
+
+  .feature h4 {
+    font-size: 1rem;
+  }
+
+  .feature p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: 0.45rem;
+  }
+
+  .how {
+    border-top: 1px solid var(--border);
+  }
+
+  .steps {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    counter-reset: step;
+  }
+
+  @media (min-width: 720px) {
+    .steps {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .steps li {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.4rem 1.5rem;
+    box-shadow: var(--shadow);
+  }
+
+  .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+
+  .steps h3 {
+    font-size: 1.02rem;
+  }
+
+  .steps p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: 0.45rem;
+  }
+
+  .closing {
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding-bottom: 4.5rem;
+  }
+
+  .closing h2 {
+    font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+    letter-spacing: -0.02em;
+    max-width: 32rem;
+    margin: 0 auto 1.5rem;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
